@@ -20,7 +20,7 @@ export default function MyCustomWidget() {
     window.myWidgetParam.push({
       id: 12, // Widget ID
       cityid: '2306104', // City ID 
-      appid: '702b816b331a15a08db1b932b7826bbc', // OpenWeatherMap API key
+      appid: '', // OpenWeatherMap API key
       units: 'metric', // Temperature unit
       containerid: 'my-custom-widget', // Update the container ID
     });
