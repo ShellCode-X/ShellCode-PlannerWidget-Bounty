@@ -1,6 +1,6 @@
 # ShellCode-PlannerWidget-Bounty
 
-Title: Weather Widget: Bringing Live Weather Updates to Your Website
+Title: Weather Widget: Bringing Live Weather Updates
 
 Introduction:
 The Weather Widget is a powerful and versatile tool that allows website owners to display live weather information on their web pages. This widget was built to enhance user experience by providing real-time weather updates and enabling visitors to stay informed about weather conditions in their desired locations. In this write-up, we will delve into the reasons behind building the Weather Widget and provide a comprehensive explanation of how it works.
