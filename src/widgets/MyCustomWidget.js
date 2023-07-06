@@ -2,29 +2,18 @@ import React, { useEffect } from 'react';
 
 export default function MyCustomWidget() {
   useEffect(() => {
-    // Create a script element dynamically
     const script = document.createElement('script');
-    script.async = true;
-    script.charset = 'utf-8';
-    script.src =
-      '//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js';
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.defer = true;
+    script.setAttribute('data-use-service-core', '');
+    document.body.appendChild(script);
 
-    // Get the first script tag on the page
-    const s = document.getElementsByTagName('script')[0];
-
-    // Insert the dynamically created script before the first script tag
-    s.parentNode.insertBefore(script, s);
-
-    // Set up the widget parameters
-    window.myWidgetParam = window.myWidgetParam || [];
-    window.myWidgetParam.push({
-      id: 12, // Widget ID
-      cityid: '2306104', // City ID 
-      appid: '', // OpenWeatherMap API key
-      units: 'metric', // Temperature unit
-      containerid: 'my-custom-widget', // Update the container ID
-    });
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
-  return <div id="my-custom-widget"></div>; // Update the container ID
-}
+  return (
+    <div className="elfsight-app-cb51ab04-8892-4545-bca7-f937f664f098"></div>
+  );
+};
